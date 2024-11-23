@@ -1,14 +1,20 @@
-body {
+body { 
     margin: 0;
     font-family: Arial, sans-serif;
   }
-  
+  header{
+  margin: 0 17%;
+  }
+  .container{
+    max-width: 1324px;
+    padding: 0px;
+  }
   .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #e8f7fc;
-    /* border: 2px solid #00c4ff; */
+   
     padding: 10px 20px;
   }
   
@@ -23,13 +29,14 @@ body {
     align-items: center;
     /* border: 2px solid #00c4ff; */
     padding: 5px;
-    background-color: #f0fcff;
+    background-color: #6395a1;
   }
   
   .search-input {
     border: none;
     outline: none;
-    padding: 5px;
+    padding: 10px;
+    margin: 0 105px;
     flex: 1;
     font-size: 16px;
   }
@@ -59,10 +66,7 @@ body {
     font-size: 14px;
     line-height: 1.2;
   }
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
+
   
   /* menubar */
   
@@ -118,3 +122,49 @@ body {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+
+  /*container*/
+  .contain{
+    margin-bottom: 300px;
+  }
+
+  .container-add{
+    float: left;
+    width: 59%;
+    height: 300px;
+    background-color: red;
+    padding-right: 2px;
+  }
+.sidebar{
+  float: right;
+  width: 39%;
+  height: 300px;
+  background-color: blue;
+}
+
+
+.section {
+  /* margin-bottom: 40px; */
+  /* margin-top: 40px; */
+  padding-top: 20px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  gap: 20px; /* Space between boxes */
+}
+
+.grid-item {
+  background-color: #8A2BE2; /* Purple color */
+  width: 100%;
+  padding-top: 60%; /* Aspect ratio: keeps boxes rectangular */
+  border-radius: 5px;
+}
